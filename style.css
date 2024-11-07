@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.resume-container {
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Flexbox for Side-by-Side Layout */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Form Section */
+.form-section {
+    width: 40%;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Resume Display Section */
+.resume-display {
+    width: 60%;
+    padding: 20px;
+}
+
+.resume-display .header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #4a90e2;
+}
+
+.section h2 {
+    font-size: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+#upload-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button#submit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button#submit-button:hover {
+    background-color: #357abd;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}

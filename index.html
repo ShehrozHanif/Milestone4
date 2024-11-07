@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <h1 class="title">Resume Builder</h1>
+
+        <!-- Side-by-Side Layout Wrapper -->
+        <div class="content-wrapper">
+            <!-- Form Section -->
+            <section class="form-section">
+                <h2>Enter Your Details</h2>
+                <form id="resume-form">
+                    <!-- Personal Information Fields -->
+                    <label>Name: <input type="text" id="name-input" placeholder="Your Name"></label>
+                    <label>Email: <input type="email" id="email-input" placeholder="you@example.com"></label>
+                    <label>Phone: <input type="tel" id="phone-input" placeholder="+923332307890"></label>
+                    <label>Location: <input type="text" id="location-input" placeholder="City, Country"></label>
+
+                    <!-- Education Fields -->
+                    <label>Education: <input type="text" id="education-input" placeholder="Degree, University, Year"></label>
+
+                    <!-- Skills Fields -->
+                    <label>Skills: <input type="text" id="skills-input" placeholder="Comma-separated skills"></label>
+
+                    <!-- Work Experience Fields -->
+                    <label>Work Experience: <input type="text" id="experience-input" placeholder="Job Title, Company, Year"></label>
+
+                    <button type="button" id="submit-button">Submit</button>
+                </form>
+            </section>
+
+            <!-- Displayed Resume -->
+            <section class="resume-display">
+                <header class="header">
+                    <img id="profile-pic" src="file.jpg" alt="Profile Picture" class="profile-pic">
+                    <!-- New Upload Button for Profile Picture -->
+                    <input type="file" id="upload-button" accept="image/*">
+                    <h1 id="display-name">Your Name</h1>
+                    <p id="display-contact"><strong>Contact:</strong> <span id="display-email">your-email@example.com</span> | <span id="display-phone">+923332307890</span></p>
+                    <p id="display-location"><strong>Location:</strong> City, Country</p>
+                </header>
+                <main>
+                    <section class="education section">
+                        <h2>Education</h2>
+                        <p id="display-education">Degree, University, Year</p>
+                    </section>
+                    <section class="skills section">
+                        <h2>Skills</h2>
+                        <p id="display-skills">Skill 1, Skill 2, Skill 3</p>
+                    </section>
+                    <section class="work-experience section">
+                        <h2>Work Experience</h2>
+                        <p id="display-experience">Job Title, Company, Year</p>
+                    </section>
+                </main>
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
